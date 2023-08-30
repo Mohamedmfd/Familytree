@@ -1,4 +1,4 @@
-from init import Base
+from __init__ import Base
 from sqlalchemy import Column, Integer, String
 
 class Country(Base):
