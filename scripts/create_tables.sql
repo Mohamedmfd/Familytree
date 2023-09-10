@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS country (
 );
 
 CREATE TABLE IF NOT EXISTS domain (
-    Id SERIAL,
+    id SERIAL,
     name VARCHAR(20),
     PRIMARY KEY(id)
 );

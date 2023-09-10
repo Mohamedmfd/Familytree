@@ -2,16 +2,16 @@ from flask import Flask, jsonify
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from core.db.domain import Domain
-from core.db.country import Country
-from core.db.contact import Contact
-from core.db.marriage import Marriage
-from core.db.parenthood import Parenthood
-from core.db.study import Study
-from core.db.profession import Profession
+# from core.db.country import Country
+# from core.db.contact import Contact
+# from core.db.marriage import Marriage
+# from core.db.parenthood import Parenthood
+# from core.db.study import Study
+# from core.db.profession import Profession
 
 app = Flask(__name__)
 
-engine = create_engine('postgresql://username:password@localhost/dbname')
+engine = create_engine('postgresql://postgres:password@localhost/familytree')
 Session = sessionmaker(bind=engine)
 session = Session()
 

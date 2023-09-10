@@ -1,4 +1,4 @@
-from __init__ import Base
+from core.db import Base
 from sqlalchemy import Column, Integer, String
 
 class Domain(Base):
